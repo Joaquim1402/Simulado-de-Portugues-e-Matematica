@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulado — SAEPE </title>
+<title>Resolução Interativa — SAEPE | Simulado Revisado — 52 Questões</title>
 <style>
 :root{--bg:#eef2f7;--card:#fff;--ink:#17253a;--muted:#65738a;--brand:#1f5d9b;--brand2:#2d81c7;--accent:#28a66f;--accent-soft:#eaf8f1;--bad:#d54444;--bad-soft:#fff0f0;--pending:#6e7d92;--line:#d9e1eb;--shadow:0 12px 34px rgba(29,53,87,.12);--soft:#f7faff}
 *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:linear-gradient(180deg,#edf3f8,#f6f8fb);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.55}
@@ -77,7 +77,7 @@ function qVisual(n){
   if(n===40){
     const ticks=[3,4,5,6,7,8];
     const pct=v=>((v-3)/5)*100;
-    return `<div class="visual"><div class="number-line"><div class="axis"></div>${ticks.map(x=>`<div class="tick" style="left:${pct(x)}%"><span>${x}</span></div>`).join('')}<div class="point" style="left:${pct(3.2)}%">A</div><div class="point" style="left:${pct(3.7)}%">B</div><div class="point" style="left:${pct(4.3)}%">C</div><div class="point" style="left:${pct(6.4)}%">D</div><div class="point" style="left:${pct(7.3)}%">E</div></div><div class="visual-caption">A escala indica apenas as posições aproximadas dos pontos; nenhum valor decimal é escrito junto às letras.</div></div>`;
+    return `<div class="visual"><div class="number-line"><div class="axis"></div>${ticks.map(x=>`<div class="tick" style="left:${pct(x)}%"><span>${x}</span></div>`).join('')}<div class="point" style="left:${pct(3.2)}%">A</div><div class="point" style="left:${pct(3.7)}%">B</div><div class="point" style="left:${pct(4.3)}%">C</div><div class="point" style="left:${pct(6.4)}%">D</div><div class="point" style="left:${pct(7.3)}%">E</div></div><div class="visual-caption"></div></div>`;
   }
   return '';
 }
